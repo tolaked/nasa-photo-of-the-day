@@ -1,12 +1,15 @@
 import React from "react";
 import TitleComponent from "./TitleComp/TitleComponent";
+import DateComp from "./Date/Date";
+import ExplanationComp from "./Explanation/Explanation";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <TitleComponent />
-      <h2>ghjfkjh</h2>
+      <DateComp />
+      <ExplanationComp />
     </div>
   );
 }

@@ -1,26 +1,25 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Title from "./Title";
+import DateComp from "./DateComp";
 
-function TitleComponent() {
-  const [title, setTitle] = useState();
-
-  let pageTitle;
+function Date() {
+  let pageDate;
+  const [date, setDate] = useState();
   axios
     .get("https://lambda-github-api-server.herokuapp.com")
     .then(res => {
-      pageTitle = res.data.title;
-      console.log(pageTitle);
-      setTitle(pageTitle);
+      console.log(res.data);
+      pageDate = res.data.date;
+      setDate(pageDate);
     })
     .catch(error => {
       return "Something went wrong";
     });
   return (
     <div>
-      <Title title={title} />
+      <DateComp date={date} />
     </div>
   );
 }
 
-export default TitleComponent;
+export default Date;
