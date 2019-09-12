@@ -7,11 +7,15 @@ const Display = styled.div`
 `;
 
 const Image = styled.img`
-  width: 60%;
+  width: 40%;
   border-radius: 10px;
+  height: 400px;
 `;
 
-const Paragragph = styled.p``;
+const Paragragph = styled.p`
+  line-height: 200%;
+  padding-left: 10px;
+`;
 
 function MainContent(props) {
   return (

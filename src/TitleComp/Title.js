@@ -6,13 +6,19 @@ const Heading = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 5px;
 `;
 const Paragraph = styled.p`
   color: white;
 `;
 const H4 = styled.h4`
   color: white;
-  font-size: 20px;
+  font-size: 30px;
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
 `;
 
 function Title(props) {
